@@ -106,6 +106,14 @@ li, a, button {
         color:navajowhite;
     }
 
+    .navbar .nav-item:hover {
+        border-bottom: 2px rgb(177, 37, 146) solid;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
 
 /* Nav Bar END */
 }
