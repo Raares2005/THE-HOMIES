@@ -52,6 +52,7 @@ li, a, button {
 
 .nav-item {
     margin-top: 10px;
+    text-align: center;
 } 
 
 .bg{
@@ -61,6 +62,12 @@ li, a, button {
 .navbar-inline{
     display: none;
 }
+
+.navbar .nav-item:hover {
+    border-bottom: 2px rgb(177, 37, 146) solid;
+}
+
+
 /* Nav Bar END */
 
 @media only screen and (min-width:768px) {
@@ -81,7 +88,7 @@ li, a, button {
     .navbar-inline{
         display: flex;
         width: 100%;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
     }
     
@@ -112,7 +119,8 @@ li, a, button {
 
     .logo {
         padding-left: 10px;
-        width: 10%; 
+        width: 200px;
+        height: 200px; 
     }
 
 
