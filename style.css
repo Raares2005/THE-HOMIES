@@ -1,6 +1,6 @@
-/* Bruh */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* Unspecific tags */
 
 * { 
     font-family: "Montserrat", sans-serif;
@@ -9,10 +9,12 @@
     padding: 0;
     --bejcolour: #f1e2b3;
     --movcolor: #5a264e;
+    --gricolor: #a19f96;
+    --mov-hovercolor:#96337f;
 }
 
 body {
-    background-color: #a19f96;
+    background-color: var(--gricolor);
 }
 
 body::before {
@@ -21,16 +23,35 @@ body::before {
     height: 60px;
 }
 
+h2 {
+    color: var(--movcolor);
+    border-bottom: var(--movcolor);
+}
 
-@media(min-width: 768px) {
-    
+p {
+    color: var(--movcolor);
+}
+
+a{
+    color: var(--movcolor);
+}
+
+a:hover{
+    color:var(--mov-hovercolor);
+}
+
+.text-mov{
+    color: var(--movcolor);
+}
+
+.text {
+    color: #cc60b3;
 }
 
 .hidden {
     visibility: hidden;
     height: 0;
 }
-
 
 /* Nav Bar */
 
@@ -49,7 +70,9 @@ body::before {
     color: #a793a2;
 }
 
+
 /* Nav Bar END */
+/* Read button */
 
 
 .read {
@@ -61,8 +84,10 @@ body::before {
 }
 
 .read:hover {
-    color: #96337f;
+    color: var(--mov-hovercolor);
 }
+
+/* Info Cards */
 
 .card-chenar {
     background-color: var(--bejcolour);
@@ -72,9 +97,10 @@ body::before {
 }
 
 .card-body {
-    color: #5a264e;
+    color: var(--movcolor);
 }
 
+/* Banner */
 .banner {
     background-color: #e7d8ab;
 }
@@ -96,6 +122,7 @@ body::before {
     background-color: var(--bejcolour);
 }
 
+
 .accordion-button {
     background-color: var(--bejcolour);
     color: var(--movcolor);
@@ -112,6 +139,14 @@ body::before {
 
 
 
+/* Acordion */
+
+
+.accordion-button:not(.collapsed){
+    background-color: #f1dda0;
+    color: var(--movcolor);
+}
+
 
 h2 {
     color: var(--movcolor);
@@ -120,11 +155,55 @@ h2 {
 
 p {
     color: var(--movcolor);
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+}
+
+.accordion-item-background-button{
+    background-color: var(--bejcolour);
+    color: var(--movcolor);
+}
+.accordion-item-background-button::after{
+    color: var(--movcolor);
+}
+
+.accordion-item-background-text{
+    background-color: var(--bejcolour);
+    color: var(--movcolor);
+}
+
+/* Our Team */
+
+.bg-primary {
+    background-color: var(--bejcolour)!important;
+}
+
+.card-body {
+    background-color: var(--gricolor);
 }
 
 
-.text {
-    color: #cc60b3;
+
+
+/* Contact */
+
+.contact-bg{
+    background-color: var(--bejcolour);
 }
 
+/* Footer */
+
+.footer-bg{
+    background-color: var(--bejcolour);
+}
+
+@media(min-width: 768px) {
+    /* Phone stuff */
+}
 
