@@ -70,7 +70,10 @@ a:hover{
     color: #a793a2;
 }
 
+
+/* Nav Bar END */
 /* Read button */
+
 
 .read {
     padding: 10px;
@@ -99,15 +102,59 @@ a:hover{
 
 /* Banner */
 .banner {
+    background-color: #e7d8ab;
+}
+
+.first.img-fluid {
+   width: 60%;
+}
+
+.first-slide {
+    background-color: #e9d9a8;
+}
+
+.third-slide {
+    background-color: #f1e2b3;
+}
+
+.accordion-item {
+    color: #96337f;
     background-color: var(--bejcolour);
 }
 
+
+.accordion-button {
+    background-color: var(--bejcolour);
+    color: var(--movcolor);
+}
+
+.team {
+    background-color: var(--movcolor);
+}
+
+.team.card-body {
+    background-color: var(--bejcolour);
+}
+
+
+
+
 /* Acordion */
+
 
 .accordion-button:not(.collapsed){
     background-color: #f1dda0;
     color: var(--movcolor);
 }
+
+
+h2 {
+    color: var(--movcolor);
+    border-bottom: var(--movcolor);
+}
+
+p {
+    color: var(--movcolor);
 
 .accordion-button:focus{
     box-shadow: none;
@@ -115,6 +162,7 @@ a:hover{
 
 .accordion-button:not(.collapsed)::after{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
 }
 
 .accordion-item-background-button{
@@ -142,6 +190,7 @@ a:hover{
 
 
 
+
 /* Contact */
 
 .contact-bg{
@@ -157,3 +206,4 @@ a:hover{
 @media(min-width: 768px) {
     /* Phone stuff */
 }
+
