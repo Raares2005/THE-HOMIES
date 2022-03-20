@@ -1,6 +1,6 @@
-/* Bruh */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* Unspecific tags */
 
 * { 
     font-family: "Montserrat", sans-serif;
@@ -21,16 +21,23 @@ body::before {
     height: 60px;
 }
 
+h2 {
+    color: var(--movcolor);
+    border-bottom: var(--movcolor);
+}
 
-@media(min-width: 768px) {
-    
+p {
+    color: var(--movcolor);
+}
+
+.text {
+    color: #cc60b3;
 }
 
 .hidden {
     visibility: hidden;
     height: 0;
 }
-
 
 /* Nav Bar */
 
@@ -49,6 +56,8 @@ body::before {
     color: #a793a2;
 }
 
+/* Read button */
+
 .read {
     padding: 10px;
     border: solid;
@@ -61,35 +70,28 @@ body::before {
     color: #96337f;
 }
 
+/* Info Cards */
+
 .card-chenar {
     background-color: var(--bejcolour);
     border-radius: 10px;
     border: solid;
-    border-color: #5a264e;
+    border-color: var(--movcolor);
 }
 
 .card-body {
-    color: #5a264e;
+    color: var(--movcolor);
 }
 
+/* Banner */
 .banner {
     background-color: var(--bejcolour);
 }
 
+/* Showcase */
 
-
-h2 {
-    color: #5a264e;
-    border-bottom: #5a264e;
-}
-
-p {
-    color: #5a264e;
-}
-
-
-.text {
-    color: #cc60b3;
-}
 
 /* Nav Bar END */
+@media(min-width: 768px) {
+    /* Phone stuff */
+}
