@@ -57,6 +57,10 @@ body::before {
     border-radius: 5px;
 }
 
+.read:hover {
+    color: #96337f;
+}
+
 .card-chenar {
     background-color: var(--bejcolour);
     border-radius: 10px;
@@ -68,6 +72,20 @@ body::before {
     color: #5a264e;
 }
 
+.banner {
+    background-color: var(--bejcolour);
+}
+
+
+
+h2 {
+    color: #5a264e;
+    border-bottom: #5a264e;
+}
+
+p {
+    color: #5a264e;
+}
 
 
 .text {
