@@ -49,6 +49,9 @@ body::before {
     color: #a793a2;
 }
 
+/* Nav Bar END */
+
+
 .read {
     padding: 10px;
     border: solid;
@@ -65,7 +68,7 @@ body::before {
     background-color: var(--bejcolour);
     border-radius: 10px;
     border: solid;
-    border-color: #5a264e;
+    border-color: var(--movcolor);
 }
 
 .card-body {
@@ -73,18 +76,50 @@ body::before {
 }
 
 .banner {
+    background-color: #e7d8ab;
+}
+
+.first.img-fluid {
+   width: 60%;
+}
+
+.first-slide {
+    background-color: #e9d9a8;
+}
+
+.third-slide {
+    background-color: #f1e2b3;
+}
+
+.accordion-item {
+    color: #96337f;
+    background-color: var(--bejcolour);
+}
+
+.accordion-button {
+    background-color: var(--bejcolour);
+    color: var(--movcolor);
+}
+
+.team {
+    background-color: var(--movcolor);
+}
+
+.team.card-body {
     background-color: var(--bejcolour);
 }
 
 
 
+
+
 h2 {
-    color: #5a264e;
-    border-bottom: #5a264e;
+    color: var(--movcolor);
+    border-bottom: var(--movcolor);
 }
 
 p {
-    color: #5a264e;
+    color: var(--movcolor);
 }
 
 
@@ -92,4 +127,4 @@ p {
     color: #cc60b3;
 }
 
-/* Nav Bar END */
+
