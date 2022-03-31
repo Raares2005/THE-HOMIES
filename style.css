@@ -64,9 +64,8 @@ a:hover{
     color: #a1478c;
 }
 
-.navbar.navbar a:hover {
+.nav-item a:hover {
     border-bottom: 2px #a1478c solid;
-    border-radius: 5px;
     color: #a793a2;
 }
 
@@ -91,7 +90,7 @@ a:hover{
 
 .card-chenar {
     background-color: var(--bejcolour);
-    border-radius: 10px;
+    border-radius: 5px;
     border: solid;
     border-color: var(--movcolor);
 }
@@ -107,6 +106,7 @@ a:hover{
 
 .first.img-fluid {
    width: 60%;
+
 }
 
 .first-slide {
@@ -129,6 +129,7 @@ a:hover{
 }
 .card-members {
     background-color: var(--gricolor);
+    border-radius: 5px;
 }
 
 .team {
@@ -139,7 +140,18 @@ a:hover{
     background-color: var(--bejcolour);
 }
 
+.showcase-img-fluid {
+    width: 100%;
+    border: solid;
+}
 
+.shop {
+    size: 100px;
+}
+
+.showcase {
+    padding-bottom: 0;
+}
 
 
 /* Acordion */
