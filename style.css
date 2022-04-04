@@ -7,9 +7,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    --bejcolour: #f1e2b3;
+    --bejcolour: #b3aaa2;
     --movcolor: #5a264e;
-    --gricolor: #a19f96;
+    --gricolor: #EBD3C5;
     --mov-hovercolor:#96337f;
 }
 
@@ -59,6 +59,10 @@ a:hover{
     background-color: var(--bejcolour);
 }    
 
+.navbar-nav {
+    display: none;
+}
+
 .nav-link,
 .navbar-brand {
     color: #a1478c;
@@ -68,6 +72,18 @@ a:hover{
     border-bottom: 2px #a1478c solid;
     border-radius: 5px;
     color: #a793a2;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #a1478c;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.hamburger:focus {
+    outline: none;
 }
 
 
@@ -102,19 +118,20 @@ a:hover{
 
 /* Banner */
 .banner {
-    background-color: #e7d8ab;
+    background-color: var(--bejcolour);
 }
 
 .first.img-fluid {
-   width: 60%;
+   width: 45%;
+   margin-left: 50px;
 }
 
 .first-slide {
-    background-color: #e9d9a8;
+    background-color: var(--bejcolour);
 }
 
 .third-slide {
-    background-color: #f1e2b3;
+    background-color: var(--bejcolour);
 }
 
 .accordion-item {
@@ -153,7 +170,7 @@ footer{
 
 
 .accordion-button:not(.collapsed){
-    background-color: #f1dda0;
+    background-color: var(--bejcolor);
     color: var(--movcolor);
 }
 
