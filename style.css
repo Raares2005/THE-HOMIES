@@ -80,10 +80,21 @@ a:hover{
     color: #a1478c;
     cursor: pointer;
     font-size: 40px;
+    margin-right: 15px;
 }
 
 .hamburger:focus {
     outline: none;
+}
+
+.navbar-brand{
+    margin: auto 22px;
+}
+
+.containerNav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 
