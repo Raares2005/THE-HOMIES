@@ -56,7 +56,8 @@ a:hover{
 /* Nav Bar */
 
  .navbar{
-    background-color: var(--bejcolour);
+    background-color: #cc60b3;
+    opacity: ;
 }    
 
 .container-nav{
@@ -71,15 +72,16 @@ a:hover{
 .navbar-nav {
     display: flex;
     flex-direction: row;
+
 }
 
 .nav-link {
-    margin: 5px;
+    margin: 15px;
 }
 
 .nav-link,
 .navbar-brand {
-    color: #a1478c;
+    color: var(--movcolor);
     padding: 0;
 }
 
@@ -144,22 +146,15 @@ a:hover{
 }
 
 /* Banner */
-.banner {
-    background-color: var(--bejcolour);
-}
 
 .first.img-fluid {
    width: 45%;
    margin-left: 50px;
 }
 
-.first-slide {
-    background-color: var(--bejcolour);
-}
 
-.third-slide {
-    background-color: var(--bejcolour);
-}
+
+
 
 .accordion-item {
     color: #96337f;
