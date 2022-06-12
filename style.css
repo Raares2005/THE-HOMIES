@@ -9,8 +9,10 @@
     padding: 0;
     --bejcolour: #b3aaa2;
     --movcolor: #5a264e;
-    --gricolor: #EBD3C5;
+    --primarycolour: #EEE1EE;
     --mov-hovercolor:#96337f;
+    --roztext: #cc60b3;
+
 }
 
 body {
@@ -45,7 +47,7 @@ a:hover{
 }
 
 .text {
-    color: #cc60b3;
+    color: var(--roztext);
 }
 
 .hidden {
@@ -56,7 +58,7 @@ a:hover{
 /* Nav Bar */
 
  .navbar{
-    background-color: var(--bejcolour);
+    background-color: #fec4e5;
 }    
 
 .container-nav{
@@ -71,15 +73,16 @@ a:hover{
 .navbar-nav {
     display: flex;
     flex-direction: row;
+
 }
 
 .nav-link {
-    margin: 5px;
+    margin: 15px;
 }
 
 .nav-link,
 .navbar-brand {
-    color: #a1478c;
+    color: var(--movcolor);
     padding: 0;
 }
 
@@ -115,6 +118,16 @@ a:hover{
 /* Pagina Main START */
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 
+.section-type1{
+    margin: auto;
+    max-width: 1524px;
+}
+
+.section-type2{
+    margin: auto;
+    max-width: 768px;
+}
+
 /* Read button */
 
 
@@ -130,6 +143,38 @@ a:hover{
     color: var(--mov-hovercolor);
 }
 
+/* SECTION learn */
+
+.first-slide:hover {
+    font-weight: 1px;
+    box-shadow: 0 10px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 90px #fa73bf;
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.first-slide {
+    transition: 0.3s;
+}
+
+
+
+.third-slide {
+    font-weight: 1px;
+    box-shadow: 0 10px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 90px #fa73bf;
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.sec-img {
+    box-shadow: 0 10px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 96px #fa73bf;
+    -o-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+
 /* Info Cards */
 
 .card-chenar {
@@ -144,22 +189,15 @@ a:hover{
 }
 
 /* Banner */
-.banner {
-    background-color: var(--bejcolour);
-}
 
 .first.img-fluid {
    width: 45%;
    margin-left: 50px;
 }
 
-.first-slide {
-    background-color: var(--bejcolour);
-}
 
-.third-slide {
-    background-color: var(--bejcolour);
-}
+
+
 
 .accordion-item {
     color: #96337f;
