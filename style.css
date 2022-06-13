@@ -2,7 +2,7 @@
 
 /* Unspecific tags */
 
-* { 
+* {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -10,8 +10,8 @@
     --bejcolour: #b3aaa2;
     --movcolor: #5a264e;
     --primarycolour: #EEE1EE;
-    --mov-hovercolor:#96337f;
-    --roztext: #cc60b3;
+    --mov-hovercolor: #96337f;
+    --roztext: #fec4e5;
 
 }
 
@@ -34,15 +34,15 @@ p {
     color: var(--movcolor);
 }
 
-a{
+a {
     color: var(--movcolor);
 }
 
-a:hover{
-    color:var(--mov-hovercolor);
+a:hover {
+    color: var(--mov-hovercolor);
 }
 
-.text-mov{
+.text-mov {
     color: var(--movcolor);
 }
 
@@ -57,16 +57,16 @@ a:hover{
 
 /* Nav Bar */
 
- .navbar{
+.navbar {
     background-color: #fec4e5;
-}    
+}
 
-.container-nav{
+.container-nav {
     display: flex;
     justify-content: flex-end;
     margin-right: 30px;
     align-items: center;
-    
+
 }
 
 
@@ -90,7 +90,7 @@ a:hover{
     border-bottom: 2px #a1478c solid;
     border-radius: 5px;
     color: #922e79;
-    
+
 }
 
 .hamburger {
@@ -107,7 +107,7 @@ a:hover{
     outline: none;
 }
 
-.navbar-brand{
+.navbar-brand {
     margin: auto 22px;
 }
 
@@ -118,12 +118,12 @@ a:hover{
 /* Pagina Main START */
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 
-.section-type1{
+.section-type1 {
     margin: auto;
     max-width: 1524px;
 }
 
-.section-type2{
+.section-type2 {
     margin: auto;
     max-width: 768px;
 }
@@ -149,72 +149,33 @@ a:hover{
 .second-slide:hover,
 .third-slide:hover {
     box-shadow: 0 10px rgb(0 0 0 / 10%);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: 0 0 90px #fa73bf;
-    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     transition: 0.5s;
     background-color: rgb(236, 220, 220);
 }
 
 
-.sec-img {
-    box-shadow: 0 10px rgb(0 0 0 / 10%);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0 0 96px #fa73bf;
-    -o-box-shadow: 0 0 20px rgba(0,0,0,0.6);
-}
-
-
-/* Info Cards */
-
-.card-chenar {
-    background-color: var(--bejcolour);
-    border-radius: 10px;
-    border: solid;
-    border-color: var(--movcolor);
-}
-
-.card-body {
-    color: var(--movcolor);
-}
 
 /* Banner */
 
 .first.img-fluid {
-   width: 45%;
-   margin-left: 50px;
+    width: 45%;
+    margin-left: 50px;
 }
 
 
-
-
-
-.accordion-item {
-    color: #96337f;
-    background-color: var(--bejcolour);
-}
-
-
-.accordion-button {
-    background-color: var(--bejcolour);
-    color: var(--movcolor);
-}
-.card-members {
-    background-color: var(--gricolor);
-}
-
-.card-members-width{
-    width:25%;
+.card-members-width {
+    width: 25%;
 }
 
 .team {
-    background-color: var(--bejcolour);
+    background-color: transparent;
 }
 
-.team.card-body {
-    background-color: var(--bejcolour);
-}
-footer{
+
+footer {
     background-color: var(--gricolor);
 }
 
@@ -222,9 +183,6 @@ footer{
 
 
 /* Acordion */
-
-
-
 
 h2 {
     color: var(--movcolor);
@@ -234,29 +192,31 @@ h2 {
 p {
     color: var(--movcolor);
 }
-.accordion-button:not(.collapsed)::after{
+
+.accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 
 }
 
-.accordion-item-background-button{
-    background-color: var(--bejcolour);
-    color: var(--movcolor);
-}
-.accordion-item-background-button::after{
+.accordion-item-background-button {
+    background-color: #fff;
     color: var(--movcolor);
 }
 
-.accordion-item-background-text{
-    background-color: var(--bejcolour);
+.accordion-item-background-button::after {
+    color: var(--movcolor);
+}
+
+.accordion-item-background-text {
     color: var(--movcolor);
 }
 
 /* Our Team */
 
 .bg-primary {
-    background-color: var(--bejcolour)!important;
+    background-color: var(--movcolor) !important;
 }
+
 
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 /* Pagina Main END */
@@ -267,14 +227,15 @@ p {
 /* Pagina Rame Amintiri START */
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 
-.mainBody{
+.mainBody {
     width: 70%;
     margin: 0 auto;
 }
 
-.headerCarousel{
+.headerCarousel {
     align-items: center;
 }
+
 /* Page Header */
 
 
@@ -285,16 +246,20 @@ p {
 
 /* Contact */
 
-.contact-bg{
+.contact-bg {
     background-color: var(--bejcolour);
 }
 
 /* Footer */
 
+
 footer.p-5.text-center.position-relative.accordion-item-background-text {
-    background-color: var(--bejcolour);
+    background-color: var(--roztext);
+    -moz-box-shadow: 0 0 5px 5px #fa73bf;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #ffa7d9;
 }
+
 @media(min-width: 768px) {
     /* Phone stuff */
 }
-
