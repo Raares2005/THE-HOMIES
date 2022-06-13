@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: var(--gricolor);
+    background-image: url(img/Layer_0.png)
 }
 
 body::before {
@@ -145,27 +145,23 @@ a:hover{
 
 /* SECTION learn */
 
-.first-slide:hover {
-    font-weight: 1px;
-    box-shadow: 0 10px rgb(0 0 0 / 10%);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0 0 90px #fa73bf;
-    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
+
 
 .first-slide {
     transition: 0.3s;
 }
 
-
-
-.third-slide {
-    font-weight: 1px;
+.first-slide:hover,
+.second-slide:hover,
+.third-slide:hover {
     box-shadow: 0 10px rgb(0 0 0 / 10%);
     -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 0 90px #fa73bf;
     -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    transition: 0.5s;
+    background-color: rgb(236, 220, 220);
 }
+
 
 .sec-img {
     box-shadow: 0 10px rgb(0 0 0 / 10%);
