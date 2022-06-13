@@ -145,12 +145,6 @@ a:hover{
 
 /* SECTION learn */
 
-
-
-.first-slide {
-    transition: 0.3s;
-}
-
 .first-slide:hover,
 .second-slide:hover,
 .third-slide:hover {
