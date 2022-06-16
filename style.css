@@ -15,7 +15,14 @@
 
 }
 
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
 body {
+    margin: 0;
     background-image: url(img/Layer_0.png)
 }
 
@@ -143,7 +150,12 @@ a:hover {
     color: var(--mov-hovercolor);
 }
 
+
+
+
+
 /* SECTION learn */
+
 
 .first-slide:hover,
 .second-slide:hover,
@@ -175,13 +187,6 @@ a:hover {
 }
 
 
-footer {
-    background-color: var(--gricolor);
-}
-
-
-
-
 /* Acordion */
 
 h2 {
@@ -195,7 +200,7 @@ p {
 
 .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-
+    
 }
 
 .accordion-item-background-button {
@@ -227,14 +232,7 @@ p {
 /* Pagina Rame Amintiri START */
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 
-.mainBody {
-    width: 70%;
-    margin: 0 auto;
-}
 
-.headerCarousel {
-    align-items: center;
-}
 
 /* Page Header */
 
@@ -244,6 +242,92 @@ p {
 /* Pagina Rame Amintiri END */
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 
+
+/* !!!!!!!!!!!!!!!!!!!!!!! */
+/* Pagina Rame Spotify START */
+/* !!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.test {
+    margin-left: 800px;
+    ;
+}
+
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition: 200ms;
+}
+
+.slide > img {
+    display: block;
+    margin-top: 25px;
+    width: 60%;
+    height: 97%;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide[data-active]  {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 5 );
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 49.5rem;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!! */
+/* Pagina Rame Spotify END */
+/* !!!!!!!!!!!!!!!!!!!!!!! */
+
+
 /* Contact */
 
 .contact-bg {
@@ -252,6 +336,10 @@ p {
 
 /* Footer */
 
+footer {
+    width: 100%;
+    background-color: var(--gricolor);
+}
 
 footer.p-5.text-center.position-relative.accordion-item-background-text {
     background-color: var(--roztext);
