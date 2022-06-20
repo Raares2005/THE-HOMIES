@@ -249,8 +249,14 @@ p {
 
 
 .test {
-    margin-left: 800px;
-    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 1300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 
@@ -260,7 +266,10 @@ p {
     position: relative;
 }
 
+
+
 .slide {
+    
     position: absolute;
     inset: 0;
     opacity: 0;
