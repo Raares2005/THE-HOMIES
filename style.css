@@ -22,7 +22,8 @@
 
 
 body {
-    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
     background-image: url(img/Layer_0.png)
 }
 
@@ -37,6 +38,8 @@ body::before {
     border-bottom: var(--movcolor);
     font-family: "Staatliches", cursive;
     font-size: 88px;
+    margin-left: 100px;
+    margin-top: 70px;
 }
 
 p {
@@ -270,12 +273,21 @@ p {
     hyphens: auto;
 }
 
+.descriere {
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+}
 
 .carousel {
     width: 100vw;
     height: 100vh;
     position: relative;
 }
+
+
 
 
 
@@ -290,6 +302,7 @@ p {
 .slide > img {
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 75px;
