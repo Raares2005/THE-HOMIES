@@ -45,15 +45,27 @@
     <div class="main">
 
         <section aria-label="Poze Spotify">
+            <div class="test col-md p-5">
+                <h2 class="titlu">RAME SPOTIFY</h2>
+                <p class="descriere lead">
+                    Inrameaza cele mai importante clipe din viata ta si admira le din orice coltisor al casei tale. Rama
+                    cu tematica Baby Boy suprinde darul cel mai frumos al vietii... UN COPIL. Varietatea temelor, a
+                    decorurilor si a dimensiunilor sunt unele dintre calitatile pe care le conturam atent la realizarea
+                    ramelor. Lasa-ne un mesaj pe Facebook, Instagram sau chiar aici pentru mai multe detalii!
+                </p>
+            </div>
             <div id="myCarousel" class="carousel" data-carousel>
                 <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
                 <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-                <div class="test col-md p-5">
-                    <h2 class="titlu">RAME SPOTIFY</h2>
-                    <p class="descriere lead">
-                        Inrameaza cele mai importante clipe din viata ta si admira le  din orice coltisor al casei tale. Rama cu tematica Baby Boy suprinde darul cel mai frumos al vietii... UN COPIL. Varietatea temelor, a decorurilor si a dimensiunilor sunt unele dintre calitatile pe care le conturam atent la realizarea ramelor. Lasa-ne un mesaj pe Facebook, Instagram sau chiar aici pentru mai multe detalii!
-                    </p>
-                </div>
+
+                <!-- Indicators  -->
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active">dasdasda</li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel inner"></div>
                 <ul data-slides>
                     <li class="slide" data-active>
                         <img src="img/rama_1.jpg" alt="Image #1">
@@ -65,11 +77,10 @@
                         <img src="img/rama_3.jpg" alt="Image #3">
                     </li>
                 </ul>
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
+
+
+
+
             </div>
 
         </section>
@@ -82,6 +93,9 @@
             <p class="copyright lead light-text ">THE HOMIES -GIFTS-</p>
             <p class="developer light-text">By Baietii Grei</p>
         </div>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
     </footer>
 
     <!-- Modal -->
@@ -132,9 +146,9 @@
             </div>
         </div>
 
-       
 
-        
+
+
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
