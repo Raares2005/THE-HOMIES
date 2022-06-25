@@ -73,7 +73,9 @@ a:hover {
 
 /* Nav Bar */
 
-.nav-menu .nav-menu-burger{
+
+
+.nav-menu-links{
     display: none;
 }
 
@@ -453,6 +455,7 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
     }
 
     .nav-menu-links {
+        display: flex;
         top: 50px;
         right: -200px;
         position: absolute;
