@@ -33,6 +33,10 @@ body::before {
     height: 60px;
 }
 
+li{
+    list-style: none;
+}
+
 .titlu {
     color: var(--movcolor);
     border-bottom: var(--movcolor);
@@ -75,6 +79,7 @@ a:hover {
 
 .navbar {
     background-color: #fec4e5;
+    width: 100vw;
 }
 
 .container-nav {
@@ -382,9 +387,9 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
     box-shadow: 0 0 5px 5px #ffa7d9;
 }
 
-@media(min-width: 768px) {
+@media screen and (max-width: 768px) {
     /* Phone stuff */
-
+    
     .container-nav{
         display: none;
     }
@@ -426,6 +431,7 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
     .nav-menu-burger::before{
         transform: translateY(-10px);
     }
+
     .nav-menu-burger::after{
         transform: translateY(10px);
     }
@@ -435,35 +441,44 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
         background: transparent;
         transition: all .5s ease-in-out;
     }
+
     .nav-menu.open .nav-menu-burger::before{
         transform: rotate(45deg) translate(0px, 0px);
         transition: all .5s ease-in-out;
     }
+
     .nav-menu.open .nav-menu-burger::after{
         transform: rotate(-45deg) translate(0px, 0px);
         transition: all .5s ease-in-out;
     }
 
-
     .nav-menu-links {
-        right: 0px;
-        transform: translateX(100px);
-        display: block;
+        top: 50px;
+        right: -200px;
         position: absolute;
-        z-index: 9999999;
-        width: 100px;
+        z-index: -1;
+        width: 200px;
         height: 1000px;
         background: var(--roztext);
+        transition: all .3s ease-in-out;
     }
 
-    .nav-menu.open .burger-links{
+    .nav-menu-links.open{
+        transform: translateX(-200px);
+        position: absolute;
+        transition: all .3s ease-in-out;
     }
+
+
 
     .section-1{
         margin-top: 57px;
     }
+
     .first.img-fluid{
         width: 313px;
         height: 313px;
     }
+
+
 }
