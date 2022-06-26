@@ -442,6 +442,11 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
     box-shadow: 0 0 5px 5px #ffa7d9;
 }
 
+@media screen and (max-width: 991px) {
+    .section-1{
+        margin-top: 50px;
+    }
+}
 @media screen and (max-width: 926px) {
     /* Phone stuff */
     
@@ -601,5 +606,14 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
         align-items: center;
         justify-content: center;
         margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .section-type1 .text-learn-section{
+        width: 80%;
+    }
+
+    .section-type2 .text-learn-section{
+        width: 80%;
     }
 }
