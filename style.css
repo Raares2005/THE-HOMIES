@@ -140,10 +140,6 @@ a:hover {
     max-width: 768px;
 }
 
-.main {
-    margin: auto;
-    max-width: 1524px;
-}
 /* Read button */
 
 
@@ -164,6 +160,59 @@ a:hover {
 
 
 /* SECTION learn */
+
+
+
+.section-type1 .img-section{
+    width: 40%;
+    height: 100%;
+}
+
+.section-type1 .img-section img{
+    width: 100%;
+    height: 98%;
+    padding-left: 10px;
+    padding-right: 20px;
+
+}
+
+.section-type1 .text-learn-section{
+    width: 40%;
+}
+
+.section-type1 .container-section{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.section-type2 .img-section{
+    width: 50%;
+    height: 100%;
+}
+
+.section-type2 .img-section img{
+    width: 100%;
+    padding-right: 20px;
+    
+}
+
+.section-type2 .text-learn-section{
+    width: 50%;
+    height: 100%;
+}
+
+.section-type2 .container-section{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
 
 
 .first-slide:hover,
@@ -235,6 +284,10 @@ p {
     background-color: var(--movcolor) !important;
 }
 
+.the-homies-team{
+    display: flex;
+    justify-content: row;
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 /* Pagina Main END */
@@ -389,7 +442,7 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
     box-shadow: 0 0 5px 5px #ffa7d9;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 926px) {
     /* Phone stuff */
     
     .container-nav{
@@ -398,9 +451,11 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
 
     .nav-menu .nav-menu-burger{
         display: block;
+        
     }
 
     .nav-menu{
+        z-index: 10;
         display: flex;
         position: relative;
         justify-content: center;
@@ -456,18 +511,21 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
 
     .nav-menu-links {
         display: flex;
-        top: 50px;
-        right: -200px;
+        top: 0px;
+        right: -300px;
         position: absolute;
+        padding-top: 60px;
         z-index: -1;
         width: 200px;
         height: 1000px;
-        background: var(--roztext);
+        background: #fff;
+        box-shadow: 0 0 5px 5px #fec4e5 ;
         transition: all .3s ease-in-out;
+        z-index: 5;
     }
 
     .nav-menu-links.open{
-        transform: translateX(-200px);
+        transform: translateX(-300px);
         position: absolute;
         transition: all .3s ease-in-out;
     }
@@ -483,5 +541,65 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
         height: 313px;
     }
 
-
+    .the-homies-team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+        
+    }
+}
+@media screen and (max-width: 767px) {
+    .section-type1 .img-section{
+        width: 40%;
+        height: 100%;
+    }
+    
+    .section-type1 .img-section img{
+        width: 100%;
+        height: 98%;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    
+    .section-type1 .text-learn-section{
+        width: 40%;
+        text-align: center;
+    }
+    
+    .section-type1 .container-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    
+    .section-type2 .img-section{
+        width: 50%;
+        height: 100%;
+    }
+    
+    .section-type2 .img-section img{
+        width: 100%;
+        padding-right: 20px;
+        
+    }
+    
+    .section-type2 .text-learn-section{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .section-type2 .container-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
 }
