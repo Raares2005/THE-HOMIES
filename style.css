@@ -22,6 +22,9 @@
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     background-image: url(img/Layer_0.png)
@@ -340,10 +343,12 @@ p {
 /* Carousel  */
 
 
+
+
 .img-slider {
    position: relative;
     width: 800px;
-    height: 500px;
+    height: 1000px;
     margin: 10px;
 }
 
@@ -351,7 +356,14 @@ p {
     z-index: 1;
     position: absolute;
     width: 100%;
+    clip-path: circle(0.5% at 0 50%);
 }
+
+.img-slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+} 
 
 .img-slider .slide img{
     z-index: 1;
@@ -361,7 +373,7 @@ p {
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 75px;
-    margin-left: 200px;
+    margin-left: 300px;
     max-width: 70%;
     max-height: 77%;
     object-fit: cover;
@@ -374,9 +386,11 @@ p {
     z-index: 2;
     position: absolute;
     display: flex;
+    justify-content: center;
     bottom: 30px;
-    left: 50%;
+    left: 72%;
     transform: translateX(-50%);
+    height: 250px;
 }
 
 .img-slider .navigation .btn {
@@ -387,6 +401,12 @@ p {
    border-radius: 60%;
    cursor: pointer;
 }
+
+.img-slider .navigation .btn.active{
+    background: var(--roztext);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) ;
+}
+
 
 
 
@@ -403,12 +423,13 @@ p {
 
 /* Footer */
 
-footer {
+.footer {
+    margin-top: auto;
     width: 100%;
     background-color: var(--gricolor);
 }
 
-footer.p-5.text-center.position-relative.accordion-item-background-text {
+.footer.p-5.text-center.position-relative.accordion-item-background-text {
     background-color: var(--roztext);
     -moz-box-shadow: 0 0 5px 5px #fa73bf;
     -webkit-box-shadow: 0 0 5px 5px#888;
@@ -420,8 +441,17 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
         margin-top: 50px;
     }
 }
+
+/* Tableta */
+
 @media screen and (max-width: 926px) {
-    /* Phone stuff */
+    
+
+    .img-slider {
+        width: 600px;
+        height: 375px;
+    }
+
     
     .container-nav{
         display: none;
@@ -581,6 +611,9 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
         margin-bottom: 100px;
     }
 }
+
+/* Telefon */
+
 @media screen and (max-width: 570px) {
     .section-type1 .text-learn-section{
         width: 80%;
@@ -590,3 +623,40 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
         width: 80%;
     }
 }
+
+@media (max-width: 620px){
+
+    .img-slider {
+        width: 400px;
+        height: 250px;
+    }
+
+    .img-slider .navigation {
+        bottom: 25px;
+    }
+    
+    .img-slider .navigation .btn {
+      
+       width: 8px;
+       height: 8px;
+       margin: 6px;
+      
+       
+    }
+
+}
+
+@media (max-width: 620px){
+
+    .img-slider {
+        width: 320px;
+        height: 200px;
+    }
+
+    .img-slider .navigation {
+        bottom: 10px;
+    }
+
+}
+
+
