@@ -32,3 +32,4 @@ menu_btn.addEventListener('click', () => {
         isOpen = false;
     }
 });
+
