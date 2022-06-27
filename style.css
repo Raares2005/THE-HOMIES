@@ -281,25 +281,24 @@ p {
     align-items: center;
 }
 
-.carousel {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+/* Carousel  */
+
+
+.img-slider {
+   position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
 }
 
-
-
-
-
-.slide {
+.img-slider .slide {
+    z-index: 1;
     position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: 200ms opacity ease-in-out;
-    transition: 200ms;
+    width: 100%;
 }
 
-.slide > img {
+.img-slider .slide img{
+    z-index: 1;
     position: relative;
     display: flex;
     align-items: center;
@@ -307,59 +306,33 @@ p {
     margin-top: 100px;
     margin-bottom: 75px;
     margin-left: 200px;
-    max-width: 100%;
+    max-width: 70%;
     max-height: 77%;
     object-fit: cover;
     object-position: center;
     float: left;
     border: 6px solid #fec4e5;
-    
 }
 
-.carousel > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.slide[data-active]  {
-    opacity: 1;
-    z-index: 1;
-    transition-delay: 0ms;
-}
-
-.carousel-button {
-    position: absolute;
+.img-slider .navigation {
     z-index: 2;
-    background: none;
-    border: none;
-    font-size: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, 5 );
-    cursor: pointer;
-    border-radius: .25rem;
-    padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.carousel-button:hover,
-.carousel-button:focus {
-    color: white;
-    background-color: rgba(0, 0, 0, .2);
+.img-slider .navigation .btn {
+   background: #fff;
+   width: 20px;
+   height: 20px;
+   margin: 10px;
+   border-radius: 60%;
+   cursor: pointer;
 }
 
-.carousel-button:focus {
-    outline: 1px solid black;
-}
 
-.carousel-button.prev {
-    left: 13.5rem;
-}
-
-.carousel-button.next {
-    right: 71.5rem;
-}
 
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 /* Pagina Rame Spotify END */
