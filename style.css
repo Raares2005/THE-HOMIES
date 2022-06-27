@@ -33,6 +33,10 @@ body::before {
     height: 60px;
 }
 
+li{
+    list-style: none;
+}
+
 .titlu {
     color: var(--movcolor);
     border-bottom: var(--movcolor);
@@ -69,8 +73,15 @@ a:hover {
 
 /* Nav Bar */
 
+
+
+.nav-menu-links{
+    display: none;
+}
+
 .navbar {
     background-color: #fec4e5;
+    width: 100vw;
 }
 
 .container-nav {
@@ -80,7 +91,6 @@ a:hover {
     align-items: center;
 
 }
-
 
 .navbar-nav {
     display: flex;
@@ -105,20 +115,6 @@ a:hover {
 
 }
 
-.hamburger {
-    background-color: transparent;
-    border: 0;
-    color: #a1478c;
-    cursor: pointer;
-    font-size: 40px;
-    margin-right: 15px;
-    display: none;
-}
-
-.hamburger:focus {
-    outline: none;
-}
-
 .navbar-brand {
     margin: auto 22px;
 }
@@ -130,6 +126,10 @@ a:hover {
 /* Pagina Main START */
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 
+.burger-links{
+    display: none;
+}
+
 .section-type1 {
     margin: auto;
     max-width: 1524px;
@@ -140,10 +140,6 @@ a:hover {
     max-width: 768px;
 }
 
-.main {
-    margin: auto;
-    max-width: 1524px;
-}
 /* Read button */
 
 
@@ -166,6 +162,59 @@ a:hover {
 /* SECTION learn */
 
 
+
+.section-type1 .img-section{
+    width: 40%;
+    height: 100%;
+}
+
+.section-type1 .img-section img{
+    width: 100%;
+    height: 98%;
+    padding-left: 10px;
+    padding-right: 20px;
+
+}
+
+.section-type1 .text-learn-section{
+    width: 40%;
+}
+
+.section-type1 .container-section{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.section-type2 .img-section{
+    width: 50%;
+    height: 100%;
+}
+
+.section-type2 .img-section img{
+    width: 100%;
+    padding-right: 20px;
+    
+}
+
+.section-type2 .text-learn-section{
+    width: 50%;
+    height: 100%;
+}
+
+.section-type2 .container-section{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
 .first-slide:hover,
 .second-slide:hover,
 .third-slide:hover {
@@ -182,8 +231,11 @@ a:hover {
 /* Banner */
 
 .first.img-fluid {
-    width: 45%;
-    margin-left: 50px;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+
 }
 
 
@@ -232,6 +284,10 @@ p {
     background-color: var(--movcolor) !important;
 }
 
+.the-homies-team{
+    display: flex;
+    justify-content: row;
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 /* Pagina Main END */
@@ -359,6 +415,178 @@ footer.p-5.text-center.position-relative.accordion-item-background-text {
     box-shadow: 0 0 5px 5px #ffa7d9;
 }
 
-@media(min-width: 768px) {
+@media screen and (max-width: 991px) {
+    .section-1{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 926px) {
     /* Phone stuff */
+    
+    .container-nav{
+        display: none;
+    }
+
+    .nav-menu .nav-menu-burger{
+        display: block;
+        
+    }
+
+    .nav-menu{
+        z-index: 10;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        right: 10px;
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-menu-burger{
+        width: 35px;
+        height: 6px;
+        border-radius: 5px;
+        background: var(--movcolor);
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-menu-burger::before,
+    .nav-menu-burger::after{
+        content: '';
+        width: 35px;
+        height: 6px;
+        position: absolute;
+        border-radius: 5px;
+        background:var(--movcolor);
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-menu-burger::before{
+        transform: translateY(-10px);
+    }
+
+    .nav-menu-burger::after{
+        transform: translateY(10px);
+    }
+
+    .nav-menu.open .nav-menu-burger{
+        transform: translateX(10px);
+        background: transparent;
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-menu.open .nav-menu-burger::before{
+        transform: rotate(45deg) translate(0px, 0px);
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-menu.open .nav-menu-burger::after{
+        transform: rotate(-45deg) translate(0px, 0px);
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-menu-links {
+        display: flex;
+        top: 0px;
+        right: -300px;
+        position: absolute;
+        padding-top: 60px;
+        z-index: -1;
+        width: 200px;
+        height: 1000px;
+        background: #fff;
+        box-shadow: 0 0 5px 5px #fec4e5 ;
+        transition: all .3s ease-in-out;
+        z-index: 5;
+    }
+
+    .nav-menu-links.open{
+        transform: translateX(-300px);
+        position: absolute;
+        transition: all .3s ease-in-out;
+    }
+
+
+
+    .section-1{
+        margin-top: 57px;
+    }
+
+    .first.img-fluid{
+        width: 313px;
+        height: 313px;
+    }
+
+    .the-homies-team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+        
+    }
+}
+@media screen and (max-width: 767px) {
+    .section-type1 .img-section{
+        width: 40%;
+        height: 100%;
+    }
+    
+    .section-type1 .img-section img{
+        width: 100%;
+        height: 98%;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    
+    .section-type1 .text-learn-section{
+        width: 40%;
+        text-align: center;
+    }
+    
+    .section-type1 .container-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    
+    .section-type2 .img-section{
+        width: 50%;
+        height: 100%;
+    }
+    
+    .section-type2 .img-section img{
+        width: 100%;
+        padding-right: 20px;
+        
+    }
+    
+    .section-type2 .text-learn-section{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .section-type2 .container-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .section-type1 .text-learn-section{
+        width: 80%;
+    }
+
+    .section-type2 .text-learn-section{
+        width: 80%;
+    }
 }
