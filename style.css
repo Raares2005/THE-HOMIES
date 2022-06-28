@@ -498,7 +498,7 @@ p {
         position: absolute;
         padding-top: 60px;
         z-index: -1;
-        width: 240px;
+        width: 300px;
         height: 100vh;
         background: #fff;
         box-shadow: 0 0 5px 5px #fec4e5;
@@ -519,6 +519,14 @@ p {
     .link-offscreen {
         width: auto;
         text-align: center;
+        font-size:x-large;
+        
+    }
+    .nav-menu-links.nav-menu-links a:hover {
+        border-bottom: 5px #a1478c solid;
+        border-radius: 5px;
+        color: #922e79;
+    
     }
 
     .offscreen-logo {
