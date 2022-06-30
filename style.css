@@ -293,14 +293,21 @@ p {
 /* Pagina Rame Spotify START */
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 
-.test {
-    position: relative;
-    flex-direction: column;
+
+.sectiune-carusel{
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 50%;
+    height: 800px;
+    margin: 50px 0;
+}
 
+.test {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
     left: 100px;
     margin-right: 0;
     overflow-wrap: break-word;
@@ -309,9 +316,8 @@ p {
 }
 
 .descriere {
-    margin-top: 100px;
-    margin-left: 50px;
-    padding-left: 70px;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
 }
@@ -320,10 +326,7 @@ p {
 
 .img-slider {
     position: relative;
-    width: 800px;
-    float: left;
-    height: 1000px;
-    margin: 10px;
+    width: 45%;
 }
 
 .img-slider .slide {
@@ -339,25 +342,22 @@ p {
     transition-property: clip-path;
 }
 
-.img-slider .slide img {
+.img-slider .slide.slide img {
     z-index: 1;
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 75px;
-    margin-left: 300px;
-    max-width: 70%;
-    max-height: 77%;
-    object-fit: cover;
-    object-position: center;
-    float: left;
-    border: 3px solid #fec4e5;
+    width: 90%;
+    max-height: 700px;
+    margin: 0 auto;
     box-shadow: 0 10px rgb(0 0 0 / 10%);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: 0 0 90px #fa73bf;
     -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.slide.slide img{
+    
+    border: none;
 }
 
 .img-slider .navigation {
@@ -366,7 +366,7 @@ p {
     display: flex;
     justify-content: center;
     bottom: 30px;
-    left: 72%;
+    left: 42%;
     transform: translateX(-50%);
     height: 250px;
 }
