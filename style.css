@@ -12,6 +12,7 @@
     --primarycolour: #EEE1EE;
     --mov-hovercolor: #96337f;
     --roztext: #fec4e5;
+    
 }
 
 *::before,
@@ -25,7 +26,9 @@ body {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background-image: url(img/Layer_0.png)
+    background-image: url(img/Layer_0.png);
+    outline: none;
+border: 0;
 }
 
 body::before {
@@ -43,7 +46,7 @@ li {
     border-bottom: var(--movcolor);
     font-family: "Staatliches", cursive;
     font-size: 88px;
-    margin-left: 100px;
+    margin-left: 10px;
     margin-top: 100px;
 }
 
@@ -138,9 +141,9 @@ a:hover {
     max-width: 768px;
 }
 
-/* Read button */
+/* Btn button */
 
-.read {
+.btn {
     padding: 10px;
     border: solid;
     text-decoration: none;
@@ -148,7 +151,7 @@ a:hover {
     border-radius: 5px;
 }
 
-.read:hover {
+.btn:hover {
     color: var(--mov-hovercolor);
 }
 
@@ -293,37 +296,88 @@ p {
 /* Pagina Rame Spotify START */
 /* !!!!!!!!!!!!!!!!!!!!!!! */
 
-.test {
-    position: relative;
-    flex-direction: column;
+
+.sectiune-carusel{
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 50%;
+    height: 850px;
+    margin: 50px 0;
+}
 
-    left: 100px;
-    margin-right: 0;
+.test {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 500px;
+    margin-top: 0%;
+    margin-left: 2%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
 }
 
 .descriere {
-    margin-top: 100px;
-    margin-left: 50px;
-    padding-left: 70px;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.btn.btn-pret {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 5px solid var(--movcolor);
+    margin-top: 5%;
+    margin-left: 44%;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.btn.btn-pret:hover {
+    box-shadow: 0 10px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 90px #96337f;
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.mail {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.link-contact {
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.link-contact:hover,
+.link-contact:active,
+.link-contact:visited,
+.link-contact:focus {
+    color: inherit;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  border:none;
 }
 
 /* Carousel  */
 
 .img-slider {
+    display: flex;
     position: relative;
-    width: 800px;
-    float: left;
-    height: 1000px;
-    margin: 10px;
+    width: 50%;
+    height: 100px;
+    margin-bottom: 20px;
+    
 }
 
 .img-slider .slide {
@@ -345,14 +399,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 75px;
-    margin-left: 300px;
+    margin-left: 10%;
     max-width: 70%;
     max-height: 77%;
     object-fit: cover;
     object-position: center;
-    float: left;
     border: 3px solid #fec4e5;
     box-shadow: 0 10px rgb(0 0 0 / 10%);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -360,22 +411,23 @@ p {
     -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
+
+
 .img-slider .navigation {
     z-index: 2;
-    position: absolute;
+    position: relative;
     display: flex;
+    width: 100%;
     justify-content: center;
-    bottom: 30px;
-    left: 72%;
-    transform: translateX(-50%);
-    height: 250px;
+    margin-left: -5%;
+    margin-top: 75%;
 }
 
 .img-slider .navigation .btn {
     background: #fff;
     width: 20px;
     height: 20px;
-    margin: 10px;
+    margin: 0 10px;
     border-radius: 60%;
     cursor: pointer;
 }
@@ -398,6 +450,7 @@ p {
 /* Footer */
 
 .footer {
+    position:relative;
     margin-top: auto;
     width: 100%;
     background-color: var(--gricolor);
@@ -410,6 +463,30 @@ p {
     box-shadow: 0 0 5px 5px #ffa7d9;
 }
 
+
+@media screen and (max-width: 1300px) {
+    .sectiune-carusel {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1182px) {
+    .btn.btn-pret {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1104px) {
+    .img-slider {
+        margin-top: 70px;
+    }
+}
+
+
 @media screen and (max-width: 991px) {
     .section-1 {
         margin-top: 50px;
@@ -420,30 +497,18 @@ p {
     }
 }
 
+@media screen and (max-width: 957px) {
+    .titlu {
+        font-size: 75px;
+    }
+    .test {
+        margin: 0;
+    }
+}
+
 /* Tableta */
 
-@media screen and (max-width: 926px) {
-
-
-    .img-slider {
-        position: relative;
-        left: 25px;
-        
-    }
-
-    .test {
-        width: 100%;
-    }
-
-
-    .titlu {
-        position: relative;
-        left: -85px;
-    }    
-
-    .descriere {
-        margin-right: 160px;
-    }
+@media screen and (max-width: 936px) {
 
 
     .container-nav {
@@ -578,16 +643,15 @@ p {
         display: flex;
         align-items: center;
         width: 50%;
-
-        
     }
 
 
     .sectiune-carusel {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         width: 100%;
-        align-items: center;
+        height: 2000px;
     }
 
     .slide.slide img{
@@ -602,7 +666,7 @@ p {
         display: flex;
         width: 70%;
         margin-left: 180px;
-        height: 700px;
+        height: 00px;
     }
 
     .slide {
@@ -611,31 +675,44 @@ p {
 
 
     .img-slider .navigation {
-        height: 110px;
-        left: 35%;
+        height: 85px;
+        margin-left: 2px;
     }
 
 
     .test {
         position: relative;
         width: 100%;
+        height: 1600px;
         margin: 0 auto;
     }
 
+
     .descriere {
-        height: 100px;
-        width: 150%;
+        height: 400px;
+        width: 85%;
         padding-left: 0px;
-        margin-bottom: 200px;
-        
         align-self: center;
+        margin: 0 auto;
     }
 
     .titlu {
-        height: 110px;
-        width: 120%;
+        margin: 0 auto;
+        height: 50px;
+        width: 80%;
+        justify-self: center;
+
     }
+
+
+
+    .footer {
+        position: absolute;
+        bottom: 3px;
+    }
+
 }
+
 
 
 @media screen and (max-width: 820px) {
@@ -778,6 +855,9 @@ p {
     }
 }
 
+@media(max-width: 500px) {
+
+}
 
 
 
