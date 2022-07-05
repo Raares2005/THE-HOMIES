@@ -1722,6 +1722,13 @@ p {
         font-size: 100px;
     }
 
+    .titlu-lung {
+        font-size: 60px;
+        margin-bottom: 50px;
+        margin-left: 2%;
+        margin-top: 14%;
+    }
+
     .btn.btn-pret {
         margin-bottom: 200px;
     }
@@ -1990,7 +1997,7 @@ p {
 
 
     .titlu-lung {
-        font-size: 70px;
+        font-size: 60px;
         margin-bottom: 50px;
         margin-left: 2%;
         margin-top: 14%;
@@ -2028,7 +2035,7 @@ p {
     }
 
     .titlu-lung {
-        font-size: 60px;
+        font-size: 50px;
         margin-bottom: 50px;
         margin-left: 2%;
         margin-top: 14%;
@@ -2095,6 +2102,23 @@ p {
         margin-top: 14%;
     }
 }    
+
+
+@media(max-width: 410px) {
+    .titlu-lung {
+        font-size: 40px;
+        margin-bottom: 50px;
+        margin-left: 2%;
+        margin-top: 14%;
+    }
+
+
+    .descriere {
+        height: 400px;
+        width: 96%;
+        margin-left: 10px;
+    }
+}
     
 @media(max-width: 388px){
 
