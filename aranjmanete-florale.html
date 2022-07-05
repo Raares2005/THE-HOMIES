@@ -18,54 +18,52 @@
 
     <nav class="navbar  py-3 fixed-top">
         <div class="container-p-0">
-          <a href="index.html" class="navbar-brand"><b>THE HOMIES -GIFTS-</b></a>
+            <a href="index.html" class="navbar-brand"><b>THE HOMIES -GIFTS-</b></a>
         </div>
         <div class="nav-menu">
-          <div class="nav-menu-burger"></div>
+            <div class="nav-menu-burger"></div>
         </div>
         <div class="nav-menu-links">
-          <ul class="burger-nav-links">
-            <li>
-              <a href="rame-spotify.html" class="nav-link link-offscreen">RAME SPOTIFY</a>
-            </li>
-            <li>
-              <a href="rame-amintiri.html" class="nav-link link-offscreen">RAME AMINTIRI</a>
-            </li>
-            <li>
-              <a href="cutiute-cu-poze.html" class="nav-link link-offscreen">CUTIUTE CU POZE</a>
-            </li>
-            <li>
-              <a href="aranjmanete-florale.html" class="nav-link link-offscreen">ARANJAMENTE FLORALE</a>
-            </li>
-          </ul>
-          <h1 class="offscreen-logo">THE HOMIES -GIFTS-</h1>
+            <ul class="burger-nav-links">
+                <li>
+                    <a href="rame-spotify.html" class="nav-link link-offscreen">RAME SPOTIFY</a>
+                </li>
+                <li>
+                    <a href="rame-amintiri.html" class="nav-link link-offscreen">RAME AMINTIRI</a>
+                </li>
+                <li>
+                    <a href="cutiute-cu-poze.html" class="nav-link link-offscreen">CUTIUTE CU POZE</a>
+                </li>
+                <li>
+                    <a href="aranjmanete-florale.html" class="nav-link link-offscreen">ARANJAMENTE FLORALE</a>
+                </li>
+            </ul>
+            <h1 class="offscreen-logo">THE HOMIES -GIFTS-</h1>
         </div>
         <div class="container-nav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="rame-spotify.html" class="nav-link">Rame Spotify</a>
-            </li>
-            <li class="nav-item">
-              <a href="rame-amintiri.html" class="nav-link">Rame Amintiri</a>
-            </li>
-            <li class="nav-item">
-              <a href="cutiute-cu-poze.html" class="nav-link">Cutiute Cu Poze</a>
-            </li>
-            <li class="nav-item">
-              <a href="aranjmanete-florale.html" class="nav-link">Aranjamente Florale</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="rame-spotify.html" class="nav-link">Rame Spotify</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rame-amintiri.html" class="nav-link">Rame Amintiri</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cutiute-cu-poze.html" class="nav-link">Cutiute Cu Poze</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aranjmanete-florale.html" class="nav-link">Aranjamente Florale</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-    
+    </nav>
 
     <!-- Content  -->
-    
 
     <section class="sectiune-carusel" aria-label="Rame Spotify">
         <div class="img-slider">
             <div class="slide active">
-                <img src="img/rama_1.jpg" alt="Image #1">
+                <img  src="img/rama_1.jpg"  alt="Image #1">
             </div>
             <div class="slide">
                 <img src="img/rama_2.jpg" alt="Image #2">
@@ -80,79 +78,82 @@
             </div>
         </div>
         <div class="test">
-            <h2 class="titlu">ARANJAMENTE FLORALE</h2>
+            <h2 class="titlu-lung">Aranjamente Florale</h2>
             <p class="descriere lead">
                 Inrameaza cele mai importante clipe din viata ta si admira le din orice coltisor al casei tale. Rama
                 cu tematica Baby Boy suprinde darul cel mai frumos al vietii... UN COPIL. Varietatea temelor, a
-                decorurilor si a dimensiunilor sunt unele dintre calitatile pe care le conturam atent la realizarea
+                decorurilor si a dimensiunilor sunt unele dintre calitatile pe care le conturam ate la realizarea
                 ramelor. Lasa-ne un mesaj pe Facebook, Instagram sau chiar aici pentru mai multe detalii!
-                <br>
-                
             </p>
+
+            <a class="link-contact" href="https://www.instagram.com/thehomies.gifts/" target="_blank">
+                <button class="btn btn-pret">
+                    <img class="mail" src="img/mail-svgrepo-com.svg" alt=""> <b>CONTACTEAZĂ-NE ACUM !</b>
+                </button>
+            </a>
         </div>
 
-            <script type="text/javascript">
-                var slides = document.querySelectorAll('.slide');
-                var btns = document.querySelectorAll('.btn');
-                let currentSlide = 1;
 
-                // Js for image slider manual navigation 
+        <script type="text/javascript">
+            var slides = document.querySelectorAll('.slide');
+            var btns = document.querySelectorAll('.btn');
+            let currentSlide = 1;
 
-                var manualNav = function (manual) {
-                    slides.forEach((slide) => {
-                        slide.classList.remove('active');
+            // Js for image slider manual navigation 
 
-                        btns.forEach((btn) => {
-                            btn.classList.remove('active');
-                        });
-                    });
+            var manualNav = function (manual) {
+                slides.forEach((slide) => {
+                    slide.classList.remove('active');
 
-
-                    slides[manual].classList.add('active');
-                    btns[manual].classList.add('active');
-                }
-
-                btns.forEach((btn, i) => {
-                    btn.addEventListener("click", () => {
-                        manualNav(i);
-                        currentSlide = i;
+                    btns.forEach((btn) => {
+                        btn.classList.remove('active');
                     });
                 });
 
-                //  Js for image slider autoplay navigation
 
-                var repeat = function (activeClass) {
-                    let active = document.getElementsByClassName('active');
-                    let i = 1;
+                slides[manual].classList.add('active');
+                btns[manual].classList.add('active');
+            }
 
-                    var repeater = () => {
-                        setTimeout(function () {
-                            [...active].forEach((activeSlide) => {
-                                activeSlide.classList.remove('active');
-                            });
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    manualNav(i);
+                    currentSlide = i;
+                });
+            });
 
-                            slides[i].classList.add('active');
-                            btns[i].classList.add('active');
-                            i++;
+            //  Js for image slider autoplay navigation
 
-                            if (slides.length == i) {
-                                i = 0;
-                            }
-                            if (i >= slides.length) {
-                                return;
-                            }
-                            repeater();
-                        }, 10000);
-                    }
-                    repeater();
+            var repeat = function (activeClass) {
+                let active = document.getElementsByClassName('active');
+                let i = 1;
+
+                var repeater = () => {
+                    setTimeout(function () {
+                        [...active].forEach((activeSlide) => {
+                            activeSlide.classList.remove('active');
+                        });
+
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+
+                        if (slides.length == i) {
+                            i = 0;
+                        }
+                        if (i >= slides.length) {
+                            return;
+                        }
+                        repeater();
+                    }, 10000);
                 }
-                repeat();
-                
-            </script>
+                repeater();
+            }
+            repeat();
+        </script>
 
 
-        </section>
-    
+    </section>
 
     <!-- Footer -->
     <footer class="footer p-5 text-center position-relative accordion-item-background-text">
